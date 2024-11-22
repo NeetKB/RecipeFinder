@@ -1,72 +1,34 @@
 ## Recipe Finder Website
 
-This project has been built using the MERN stack.
+This repository aims to recommend recipes to the users bsed on their search filters.
 
-### Structure
+Built with MERN
 
-This repo contains two applications:
+## 🌟 Features
 
-- A frontend React App
-- A backend api server
+- User Authentication: Users can create an account and log in. Passwords are encrypted in the database.
 
-These two applications will communicate through HTTP requests, and need to be
-run separately.
+## 🔧 Prerequisites
 
-### Documentation
+Ensure you have Node.js and MongoDB installed.
 
-[More documentation of the codebase and its architecture can be found here.](./DOCUMENTATION.md)
+## Project set-up
 
-### Card wall
+Install dependencies for both the `frontend` and `api` applications:
 
-https://trello.com/b/9rEDW8IM/recommendations
+```
+cd frontend
+npm install
+cd ../api
+npm install
+```
 
-### Quickstart
-
-### Install Node.js
-
-If you haven't already, make sure you have node and NVM installed.
-
-1. Install Node Version Manager (NVM)
-   ```
-   brew install nvm
-   ```
-   Then follow the instructions to update your `~/.bash_profile`.
-2. Open a new terminal
-3. Install the latest version of [Node.js](https://nodejs.org/en/).
-   ```
-   nvm install 20
-   ```
-
-### Set up your project
-
-1. Fork this repository
-2. Every team member clone the fork to their local machine
-3. Install dependencies for both the `frontend` and `api` applications:
-   ```
-   cd frontend
-   npm install
-   cd ../api
-   npm install
-   ```
-4. Install an ESLint plugin for your editor, for example
-   [ESLint for VSCode](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-5. Install MongoDB
-   ```
-   brew tap mongodb/brew
-   brew install mongodb-community@6.0
-   ```
-   _Note:_ If you see a message that says
-   `If you need to have mongodb-community@6.0 first in your PATH, run:`, follow
-   the instruction. Restart your terminal after this.
-6. Start MongoDB
-
-   ```
-   brew services start mongodb-community@6.0
-   ```
+Install an ESLint plugin for your editor, for example
+[ESLint for VSCode](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
 ### Setting up environment variables.
 
-We need to create two `.env` files, one in the frontend and one in the api.
+You need to create two `.env` files, one in the frontend and one in the api.
 
 #### Frontend
 
@@ -81,9 +43,9 @@ VITE_BACKEND_URL="http://localhost:3000"
 Create a file `api/.env` with the following contents:
 
 ```
-MONGODB_URL="mongodb://0.0.0.0/recommendations"
+MONGODB_URL="mongodb://0.0.0.0/recipes"
 NODE_ENV="development"
-JWT_SECRET="secret"
+JWT_SECRET= [YOUR CHOICE OF PASSWORD]
 ```
 
 For an explanation of these environment variables, see the documentation.
@@ -103,13 +65,8 @@ In a new terminal session...
 
 ```
 ; cd frontend
-; npm run dev
+; npx vite
 ```
 
 You should now be able to open your browser and go to
-`http://localhost:5173/signup` to create a new user.
-
-Then, after signing up, you should be able to log in by going to
-`http://localhost:5173/login`.
-
-Once logged in, you should be able to see a feed of recipes, get a new recipe, favourite it and have it saved in your profile page.
+`http://localhost:5174/signup` to create a new user.
