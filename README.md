@@ -2,7 +2,7 @@
 
 This repository aims to recommend recipes to the users bsed on their search filters.
 
-## Built with MERN
+## Built with MERN, HTML, CSS, Jest and Vitest
 
 ## 🌟 Features
 
