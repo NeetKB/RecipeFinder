@@ -1,12 +1,16 @@
-## Recipe Finder Website
+# Recipe Finder Website
 
 This repository aims to recommend recipes to the users bsed on their search filters.
 
-Built with MERN
+## Built with MERN
 
 ## 🌟 Features
 
-- User Authentication: Users can create an account and log in. Passwords are encrypted in the database.
+    * Secure System: Implemented robust user authentication by hashing and securely storing passwords in a MongoDB database, adhering to security-first design principles.
+    * Dynamic Data Integration: Developed an asynchronous search function using JavaScript Promises and API integration to fetch and filter results dynamically based on user-defined criteria, emphasizing reusability and modularity.
+    * Responsive Design: Utilized React's component-based architecture and styled components with CSS, to ensure a seamless experience across devices.
+    * Interactivity: Implemented state management and event-driven functionality in JavaScript to enable features like saving recipes, managing favorites, following users, and posting comments.
+    * Custom Recipe Creation: Built an intuitive recipe-generation tool leveraging form handling and data validation.
 
 ## 🔧 Prerequisites
 
